@@ -10,3 +10,8 @@
 * Zeit gesamt
 * Task Manager deaktivieren
 * Hast du schon deine Aufgaben erledigt? Multiple Choice
+
+* Login mit KEY
+
+/send empfängt daten des users
+/get sendet Daten an den User
