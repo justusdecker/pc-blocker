@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <p id="info"></p>
+    <script src="./scripts.js"></script>
+    <form action="send">
+        <label for="block_computer">Block Computer:</label>
+        <input type="checkbox" name="block_computer" id="block_computer">
+        <br>
+        <label for="start_time">Start Time:</label>
+        <input type="time" name="start" id="start_time">
+        <label for="end_time">End Time:</label>
+        <input type="time" name="end" id="end_time">
+        <br>
+        <button type="button" onclick="addElement()">Add</button>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="timings"></div>
+</body>
+</html>
