@@ -9,3 +9,4 @@
     * Unterschiedlich je nach Wochentag & Wochenende
 * Zeit gesamt
 * Task Manager deaktivieren
+* Hast du schon deine Aufgaben erledigt? Multiple Choice
