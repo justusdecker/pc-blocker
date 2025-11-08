@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     
     <p id="info"></p>
-    <script src="./scripts.js"></script>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
     <form action="send">
         <label for="block_computer">Block Computer:</label>
         <input type="checkbox" name="block_computer" id="block_computer">
