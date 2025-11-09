@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    
+    <p id="info"></p>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+    <form method="post">
+        <label for="block_computer">Block Computer:</label>
+        <input type="checkbox" name="block_computer" id="block_computer">
+        <br>
+        <label for="start_time">Start Time:</label>
+        <input type="time" name="start_time" id="start_time">
+        <label for="end_time">End Time:</label>
+        <input type="time" name="end_time" id="end_time">
+        <br>
+        <select name="start_day" id="start_day">
+            <option value="monday">Monday</option>
+            <option value="tuesday">Tuesday</option>
+            <option value="wednesday">Wednesday</option>
+            <option value="thursday">Thursday</option>
+            <option value="friday">Friday</option>
+            <option value="saturday">Saturday</option>
+            <option value="sunday">Sunday</option>
+        </select>
+        <select name="end_day" id="end_day">
+            <option value="monday">Monday</option>
+            <option value="tuesday">Tuesday</option>
+            <option value="wednesday">Wednesday</option>
+            <option value="thursday">Thursday</option>
+            <option value="friday">Friday</option>
+            <option value="saturday">Saturday</option>
+            <option value="sunday">Sunday</option>
+        </select>
+        <button type="button" onclick="addElement()">Add</button>
+        <button type="button" onclick="sendJsonData()">Submit</button>
+    </form>
+    <div id="timings"></div>
+</body>
+</html>
