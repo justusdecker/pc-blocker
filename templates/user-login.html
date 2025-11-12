@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <form action="status" method="get">
-        <label for="api_key">API_KEY: </label>
-        <input type="api_key" name="api_key" id="apikey" required>
-        <br>
-        <button type="login">Submit</button>
-    </form>
+    <div class="centered">
+        <form action="status" method="get">
+            <h3 align="center">Login</h3>
+            <input type="password" placeholder="API KEY" name="api_key" id="apikey" required>
+            <br>
+            <button type="login">Submit</button>
+        </form>
+    </div>
 </body>
 </html>
